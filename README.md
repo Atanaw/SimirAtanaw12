@@ -1,58 +1,40 @@
-# Dr. Simir Birihan Atanaw — Professional Portfolio
+# Dr. Simir Atanaw — Hydrologist Website
 
-Static professional portfolio for Dr. Simir Birihan Atanaw — hydrologist and water resources
-researcher — built for GitHub + Cloudflare Pages (and GitHub Pages-compatible).
-
-No frameworks, no build step: plain HTML5, CSS3 and vanilla JavaScript.
+Static, framework-free personal research website prepared for GitHub and Cloudflare Pages.
 
 ## Repository structure
 
-```
-Simir-Atanaw-Portfolio/
-├── index.html
-├── README.md
-├── robots.txt
-├── sitemap.xml
-├── manifest.webmanifest
-├── _redirects
-├── .gitignore
-├── favicon.ico
-├── favicon-48x48.png
-├── favicon-192x192.png
-├── favicon-512x512.png
-├── og-image.jpg
-├── assets/
-│   └── simir-atanaw.jpg
-└── documents/
-    ├── Simir_Atanaw_Industry_CV.pdf
-    └── Simir_Atanaw_Academic_CV.pdf
-```
+- `index.html` — semantic website markup
+- `style.css` — responsive design and academic visual system
+- `script.js` — mobile navigation, scroll progress, active navigation and reveal effects
+- `assets/simir.png` — original portrait
+- `assets/simir.webp` — optimized portrait used when supported
+- `assets/hydrology-pattern.svg` — lightweight scientific hero background
+- `documents/` — Industry and Academic CVs
+- `robots.txt`, `sitemap.xml`, `manifest.webmanifest` — SEO/PWA support
+- `_redirects`, `_headers` — Cloudflare Pages routing and security/cache headers
+- `favicon-*`, `favicon.ico`, `og-image.jpg` — branding and social sharing
 
-## Deploy to Cloudflare Pages
+## Cloudflare Pages deployment
 
-1. Push this repository to GitHub.
-2. In Cloudflare: **Workers & Pages → Create → Pages → Connect to Git**, then select the repo.
-3. Framework preset: **None**
-4. Build command: *(leave blank)*
-5. Build output directory: **/**
-6. Production branch: **main**
-7. Deploy. Once live, open the Pages project's **Custom domains** tab and add `hydroclimlab.uk`
-   (and `www.hydroclimlab.uk` if desired), then follow Cloudflare's DNS instructions.
+- Framework preset: **None**
+- Build command: **leave blank**
+- Build output directory: **/** (repository root)
+- Production branch: **main**
 
-## Deploy to GitHub Pages (alternative)
+Connect the GitHub repository to Cloudflare Pages. Each push to `main` will redeploy the site.
 
-1. Push this repository to GitHub.
-2. In the repo, go to **Settings → Pages**.
-3. Source: **Deploy from a branch** → branch `main`, folder `/ (root)`.
-4. Save — GitHub will publish at `https://<username>.github.io/<repo>/`.
+## GitHub Pages
+
+This site is also compatible with GitHub Pages because it is entirely static. If using GitHub Pages, `_headers` is ignored and `_redirects` is not needed.
 
 ## Google Search Console
 
-Once the domain is live, verify ownership in Search Console and submit
-`https://hydroclimlab.uk/sitemap.xml` for indexing.
+After deployment:
+1. Verify the `hydroclimlab.uk` Domain property.
+2. Submit `https://hydroclimlab.uk/sitemap.xml`.
+3. Inspect `https://hydroclimlab.uk/` and request indexing after major updates.
 
-## Updating content
+## Performance
 
-All copy — the hero, experience timeline, publications, project cards and links — lives inline in
-`index.html`. To update a CV, replace the corresponding file in `documents/` and keep the same
-filename (or update the matching `href` in `index.html` if you rename it).
+The site avoids frameworks and large dependencies, uses an optimized WebP portrait with PNG fallback, includes explicit image dimensions, and keeps JavaScript minimal. Exact Lighthouse scores depend on hosting, browser, device and network conditions.

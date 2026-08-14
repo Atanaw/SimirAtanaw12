@@ -1,9 +1,11 @@
 {
-  "name": "Dr. Simir Birihan Atanaw \u2014 Professional Portfolio",
+  "name": "Dr. Simir Atanaw",
   "short_name": "Simir Atanaw",
+  "description": "Professional website of Dr. Simir Atanaw, Hydrologist.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#FFFFFF",
   "theme_color": "#0B3C5D",
   "icons": [
     {
