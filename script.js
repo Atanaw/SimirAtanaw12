@@ -7,19 +7,18 @@
   const menuBtn = document.getElementById("menuBtn");
   const navLinks = document.getElementById("navLinks");
   const anchors = [...document.querySelectorAll(".nav-links a")];
-  const sections = anchors.map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+
+  const current = (location.pathname.split("/").pop() || "index.html");
+  anchors.forEach(a => {
+    const href = a.getAttribute("href");
+    a.classList.toggle("active", href === current || (current === "" && href === "index.html"));
+  });
 
   function handleScroll() {
     const doc = document.documentElement;
     const max = doc.scrollHeight - doc.clientHeight;
     if (progress) progress.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0) + "%";
     if (back) back.classList.toggle("show", doc.scrollTop > 600);
-
-    let current = "#home";
-    for (const section of sections) {
-      if (section.getBoundingClientRect().top <= 120) current = "#" + section.id;
-    }
-    anchors.forEach(a => a.classList.toggle("active", a.getAttribute("href") === current));
   }
 
   window.addEventListener("scroll", handleScroll, { passive: true });

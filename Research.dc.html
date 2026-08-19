@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Research | Dr. Simir Atanaw</title>
+  <meta name="description" content="Research focus, ongoing projects and peer-reviewed publications by Dr. Simir Atanaw, hydrologist.">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/styles.css">
+  <script src="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/_ds_bundle.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    a { color: var(--color-primary); }
+    a:hover { color: var(--color-primary-hover); }
+    :focus-visible { outline: 2px solid var(--color-focus-ring); outline-offset: 2px; }
+    .skip-link { position: absolute; left: -999px; top: 0; background: var(--color-surface); color: var(--color-text-primary); padding: 12px 20px; z-index: 100; border-radius: 0 0 8px 0; }
+    .skip-link:focus { left: 0; }
+    ::selection { background: var(--color-primary-tint); }
+  </style>
+</helmet>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header role="banner" style="position:sticky;top:0;z-index:50;background:var(--color-primary);box-shadow:0 1px 0 rgba(0,0,0,0.08)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="Home.dc.html" style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#FFFFFF;letter-spacing:0.01em;text-decoration:none">Simir Atanaw</a>
+    <nav aria-label="Primary" style="display:{{ desktopNavDisplay }}">
+      <ul style="display:flex;gap:32px;list-style:none;margin:0;padding:0">
+        <li><a href="Home.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">Home</a></li>
+        <li><a href="About.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">About</a></li>
+        <li><a href="Research.dc.html" aria-current="page" style="color:#FFFFFF;text-decoration:none;font-weight:700;font-size:0.95rem;border-bottom:2px solid #FFFFFF;padding-bottom:4px">Research</a></li>
+        <li><a href="Skills.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">Technical Skills</a></li>
+        <li><a href="Contact.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">Contact</a></li>
+      </ul>
+    </nav>
+    <button aria-label="Toggle menu" aria-expanded="{{ menuOpen }}" onClick="{{ toggleMenu }}" style="display:{{ mobileToggleDisplay }};background:none;border:1px solid rgba(255,255,255,0.4);border-radius:8px;padding:8px 12px;color:#FFFFFF;cursor:pointer">
+      <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Icon" name="menu" size="{{ 20 }}" color="{{ '#FFFFFF' }}" hint-size="20px,20px"></x-import>
+    </button>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <nav aria-label="Mobile" style="padding:8px 32px 20px;display:flex;flex-direction:column;gap:16px">
+      <a href="Home.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">Home</a>
+      <a href="About.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">About</a>
+      <a href="Research.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:700">Research</a>
+      <a href="Skills.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">Technical Skills</a>
+      <a href="Contact.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">Contact</a>
+    </nav>
+  </sc-if>
+</header>
+
+<main id="main">
+<section aria-labelledby="research-heading" style="background:var(--color-surface-sunken)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:72px 32px 96px">
+    <h1 id="research-heading" style="font-family:var(--font-heading);font-size:var(--text-h1-size);font-weight:var(--text-h1-weight);color:var(--color-text-primary);margin:0 0 56px">Research</h1>
+
+    <h2 style="font-family:var(--font-heading);font-size:var(--text-h3-size);font-weight:var(--text-h3-weight);color:var(--color-text-primary);margin:0 0 24px">Research focus</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:0 0 72px">
+      <sc-for list="{{ focusAreas }}" as="area" hint-placeholder-count="9">
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Card" padding="var(--space-4)" hint-size="100%,90px">
+          <div style="display:flex;align-items:flex-start;gap:14px">
+            <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Icon" name="{{ area.icon }}" size="{{ 22 }}" color="{{ 'var(--color-primary)' }}" hint-size="22px,22px"></x-import>
+            <p style="font-size:0.98rem;line-height:1.5;font-weight:500;color:var(--color-text-primary);margin:0">{{ area.label }}</p>
+          </div>
+        </x-import>
+      </sc-for>
+    </div>
+
+    <h2 style="font-family:var(--font-heading);font-size:var(--text-h3-size);font-weight:var(--text-h3-weight);color:var(--color-text-primary);margin:0 0 24px">Projects</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:0 0 72px">
+      <sc-for list="{{ projects }}" as="proj" hint-placeholder-count="3">
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Card" padding="var(--space-4)" hoverable="{{ true }}" hint-size="100%,220px">
+          <div style="display:flex;flex-direction:column;gap:12px;height:100%">
+            <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Badge" tone="accent" hint-size="auto,24px">In progress</x-import>
+            <h3 style="font-family:var(--font-heading);font-size:1.2rem;font-weight:600;color:var(--color-text-primary);margin:0">{{ proj.title }}</h3>
+            <p style="font-size:0.95rem;line-height:1.6;color:var(--color-text-muted);margin:0">{{ proj.description }}</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:auto">
+              <sc-for list="{{ proj.tags }}" as="tag" hint-placeholder-count="3">
+                <span style="font-size:0.78rem;font-weight:500;color:var(--color-text-muted);background:var(--color-surface-sunken);border-radius:999px;padding:4px 10px">{{ tag }}</span>
+              </sc-for>
+            </div>
+          </div>
+        </x-import>
+      </sc-for>
+    </div>
+
+    <h2 style="font-family:var(--font-heading);font-size:var(--text-h3-size);font-weight:var(--text-h3-weight);color:var(--color-text-primary);margin:0 0 24px">Publications</h2>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <sc-for list="{{ publications }}" as="pub" hint-placeholder-count="3">
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Card" padding="var(--space-5)" hint-size="100%,140px">
+          <div style="display:flex;gap:20px;align-items:flex-start">
+            <span style="font-family:var(--font-heading);font-weight:700;color:var(--color-primary);font-size:1.1rem;min-width:52px">{{ pub.year }}</span>
+            <div style="flex:1">
+              <h3 style="font-family:var(--font-heading);font-size:1.05rem;font-weight:600;color:var(--color-text-primary);margin:0 0 6px;line-height:1.4">{{ pub.title }}</h3>
+              <p style="font-size:0.9rem;color:var(--color-text-muted);margin:0 0 4px">{{ pub.authors }}</p>
+              <p style="font-size:0.9rem;font-style:italic;color:var(--color-text-faint);margin:0 0 12px">{{ pub.journal }}</p>
+              <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Button" variant="ghost" size="sm" icon="external-link" hint-size="auto,36px"><a href="{{ pub.doi }}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">View DOI</a></x-import>
+            </div>
+          </div>
+        </x-import>
+      </sc-for>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer role="contentinfo" style="background:var(--color-primary);color:#FFFFFF">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px">
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;margin:0 0 8px">Dr. Simir Atanaw</p>
+      <p style="margin:0 0 4px;opacity:0.85">Hydrologist</p>
+      <p style="margin:0 0 4px;opacity:0.85">Swindon, United Kingdom</p>
+      <p style="margin:0 0 4px;opacity:0.85"><a href="mailto:simirbirhan80@gmail.com" style="color:#FFFFFF">simirbirhan80@gmail.com</a></p>
+      <p style="margin:0;opacity:0.85">+44 7592 589461</p>
+    </div>
+    <div>
+      <p style="font-weight:600;margin:0 0 16px;letter-spacing:0.03em;font-size:0.85rem;text-transform:uppercase;opacity:0.85">Navigation</p>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
+        <li><a href="Home.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Home</a></li>
+        <li><a href="About.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">About</a></li>
+        <li><a href="Research.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Research</a></li>
+        <li><a href="Skills.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Technical Skills</a></li>
+        <li><a href="Contact.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-weight:600;margin:0 0 16px;letter-spacing:0.03em;font-size:0.85rem;text-transform:uppercase;opacity:0.85">Profiles</p>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
+        <li><a href="https://orcid.org/0000-0002-0451-7803" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">ORCID</a></li>
+        <li><a href="https://www.researchgate.net/profile/Simir-Atanaw" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">ResearchGate</a></li>
+        <li><a href="https://github.com/Atanaw" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/simir-atanaw" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.15);padding:20px 32px;text-align:center;font-size:0.85rem;opacity:0.75">&copy; {{ year }} Dr. Simir Atanaw. All rights reserved.</div>
+</footer>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { menuOpen: false };
+
+  focusAreas = [
+    { icon: 'thermometer-sun', label: 'Hydroclimatic extremes' },
+    { icon: 'cloud-rain-wind', label: 'Climate change impacts' },
+    { icon: 'waves', label: 'Hydrological modelling' },
+    { icon: 'droplets', label: 'Flood and drought risk' },
+    { icon: 'leaf', label: 'Environmental modelling' },
+    { icon: 'mountain-snow', label: 'Catchment hydrology' },
+    { icon: 'sprout', label: 'Climate adaptation' },
+    { icon: 'brain-circuit', label: 'AI for hydrology' },
+    { icon: 'satellite', label: 'Remote sensing' }
+  ];
+
+  projects = [
+    { title: 'River Ray Flood Analysis', description: 'Integrated flood estimation and flood-inundation modelling for the River Ray catchment, Swindon.', tags: ['Flood Estimation', 'Hydrology', 'HEC-RAS', 'FEH', 'ReFH2'] },
+    { title: 'Dirima Watershed', description: 'Catchment modelling of runoff-generating areas, erosion, sediment yield and nutrient transport.', tags: ['SWAT+', 'Catchment Hydrology', 'Soil Erosion', 'GIS'] },
+    { title: 'Climate Impact Assessment', description: 'Scenario-based evaluation of hydrological responses to climate change using CMIP6 projections.', tags: ['CMIP6', 'Streamflow', 'Drought', 'Water Resources'] }
+  ];
+
+  publications = [
+    { year: '2024', title: 'Assessment of erosion, sediment yield, and runoff generating areas in Dirima catchment, upper Blue Nile, Tana Basin, Ethiopia', authors: 'Atanaw, S. B., Zimale, F. A., & Ayenew, T.', journal: 'Sustainable Water Resources Management', doi: 'https://doi.org/10.1007/s40899-024-01167-3' },
+    { year: '2023', title: 'Modeling future hydrological responses through parameter optimization and climate change scenarios in Dirima Watershed, Ethiopia', authors: 'Atanaw, S. B., Zimale, F. A., Ayenew, T., & Ayele, G. T.', journal: 'Modeling Earth Systems and Environment, 10(1), 1117–1135', doi: 'https://doi.org/10.1007/s40808-023-01817-z' },
+    { year: '2019', title: 'Effects of soil and water conservation practices on runoff, soil and nutrient losses in Alekt Wenz Watershed, Ethiopian Highland', authors: 'Atanaw, S. B., Aynalem, D. W., Adem, A. A., Mekuria, W., & Tilahun, S. A.', journal: 'LNICST, 274, 170–182', doi: 'https://doi.org/10.1007/978-3-030-15357-1_14' }
+  ];
+
+  toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+  closeMenu = () => this.setState({ menuOpen: false });
+
+  renderVals() {
+    return {
+      menuOpen: this.state.menuOpen,
+      toggleMenu: this.toggleMenu,
+      closeMenu: this.closeMenu,
+      desktopNavDisplay: 'block',
+      mobileToggleDisplay: 'none',
+      focusAreas: this.focusAreas,
+      projects: this.projects,
+      publications: this.publications,
+      year: new Date().getFullYear()
+    };
+  }
+}
+</script>
+</body>
+</html>

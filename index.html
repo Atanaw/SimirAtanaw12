@@ -43,20 +43,26 @@
   ]
 }
 </script>
+
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to main content</a>
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
 <header class="site-header">
+  <svg class="header-river" viewBox="0 0 1200 76" preserveAspectRatio="none" aria-hidden="true">
+      <path class="river-line r1" d="M-50 20 Q150 45 350 22 T750 30 T1250 15"/>
+      <path class="river-line r2" d="M-50 55 Q200 30 420 58 T900 45 T1250 60"/>
+      <path class="river-line r3" d="M-50 40 Q300 12 600 42 T1100 35 T1250 42"/>
+    </svg>
   <div class="wrap nav">
-    <a class="brand" href="#home">Simir Atanaw<small>Hydrologist</small></a>
+    <a class="brand" href="index.html">Simir Atanaw<small>Hydrologist</small></a>
     <nav class="nav-links" id="navLinks" aria-label="Primary">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#skills">Technical Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="skills.html">Technical Skills</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
   </div>
@@ -75,210 +81,33 @@
 <section class="hero" id="home">
   <div class="hero-pattern" aria-hidden="true"></div>
   <div class="wrap hero-grid">
-    <div class="reveal in">
-      <p class="eyebrow">Hydrologist &middot; PhD</p>
-      <h1>Dr. Simir Atanaw</h1>
-      <p class="hero-role">A PhD hydrologist specialising in hydroclimatic extremes, climate change impacts, hydrological modelling, flood and drought risk assessment, and environmental modelling.</p>
+    <div class="reveal in" style="width: 625px; height: 648px">
+      <h1 style="text-align: center; font-style: normal; font-size: 42px">Dr. Simir Atanaw</h1>
+      <p class="hero-role" style="font-weight: 100">A PhD hydrologist specialising in hydroclimatic extremes, climate change impacts, hydrological modelling, flood and drought risk assessment, and environmental modelling.</p>
       <p class="hero-summary">Experienced in integrating physically based models (SWAT+, HEC-HMS), CMIP6 climate projections, GIS, remote sensing and field observations to investigate catchment processes and support climate adaptation.</p>
       <p class="hero-cta">Seeking hydrology, flood risk and water resources opportunities, and open to research collaboration.</p>
       <span class="badge">Open to Employment, Research and Project Collaboration</span>
       <div class="hero-actions">
         <a class="btn btn-primary" href="documents/Simir_Atanaw_Industry_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-        <a class="btn btn-secondary" href="#research">View Research</a>
-        <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        <a class="btn btn-secondary" href="research.html">View Research</a>
+        <a class="btn btn-secondary" href="contact.html">Contact Me</a>
       </div>
     </div>
-    <div class="photo-shell reveal in">
+    <div class="photo-shell reveal in" style="width: 250px">
+      <svg class="hydro-response" viewBox="0 0 420 500" aria-hidden="true">
+        <circle class="ripple ripple-1" cx="210" cy="250" r="60"/>
+        <circle class="ripple ripple-2" cx="210" cy="250" r="100"/>
+        <circle class="ripple ripple-3" cx="210" cy="250" r="140"/>
+        <path class="hydrograph" d="M0 420 C 40 420, 60 420, 80 400 C 110 370, 120 260, 150 220 C 175 186, 200 180, 230 210 C 260 240, 270 340, 300 380 C 330 410, 360 420, 420 420"/>
+      </svg>
       <div class="photo-card">
         <picture>
           <source srcset="assets/simir.webp" type="image/webp">
-          <img class="profile-photo" src="assets/simir.png" alt="Portrait of Dr. Simir Atanaw" width="510" height="638">
+          <img class="profile-photo" src="assets/simir.png" alt="Portrait of Dr. Simir Atanaw" width="250" height="430" style="width: 250px; height: 430px; aspect-ratio: auto">
         </picture>
       </div>
-      <div class="photo-tag">PhD in Hydrology</div>
-      <a class="video-link" href="#" style="display:flex;justify-content:center;margin-top:16px">&#9654; Short video about me</a>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="wrap">
-    <div class="section-head">
-      <div><p class="eyebrow">About</p><h2>About me</h2></div>
-      <p>I am a hydrologist with a PhD in Hydrology and Water Resources Management, passionate about interdisciplinary research combining hydrology, climate science and environmental modelling to improve resilience to climate extremes. I am currently seeking full-time opportunities in hydrology, flood risk and water resources, and remain open to research and project collaboration. Full right to work in the UK &middot; willing to relocate internationally &middot; available for fieldwork and international collaboration.</p>
-    </div>
-
-    <h3 style="margin-bottom:18px">Professional experience</h3>
-    <div class="timeline">
-      <div class="timeline-item reveal">
-        <p class="timeline-date">2025</p>
-        <h3>Assistant Professor &middot; University of Gondar</h3>
-        <p>Conducted research in hydrological modelling, hydroclimate and watershed processes; established and managed an experimental watershed for long-term hydrological monitoring; supervised MSc research; developed collaborative research proposals and publications.</p>
-      </div>
-      <div class="timeline-item reveal">
-        <p class="timeline-date">2024–2025</p>
-        <h3>Project Manager &mdash; SWAMP</h3>
-        <p>Led multidisciplinary research on sustainable water resources management; coordinated field observations, environmental datasets and hydrological modelling; collaborated with international partners from Germany and Ethiopia.</p>
-      </div>
-      <div class="timeline-item reveal">
-        <p class="timeline-date">2017–2025</p>
-        <h3>Lecturer &middot; University of Gondar</h3>
-        <p>Conducted research in hydrology, climate change and catchment management; delivered training in SWAT+, GIS, R and environmental modelling.</p>
-      </div>
-      <div class="timeline-item reveal">
-        <p class="timeline-date">2019–2025</p>
-        <h3>PhD, Hydrology &amp; Water Resources Management &middot; Africa Centre of Excellence for Water Management, Addis Ababa University</h3>
-        <p>Thesis: Modelling spatial patterns of runoff-generating areas and soil erosion using SWAT+.</p>
-      </div>
-      <div class="timeline-item reveal">
-        <p class="timeline-date">2015–2017</p>
-        <h3>MSc Engineering Hydrology &middot; Bahir Dar University</h3>
-        <p></p>
-      </div>
-      <div class="timeline-item reveal">
-        <p class="timeline-date">2011–2014</p>
-        <h3>BSc Water Resources &amp; Irrigation Management &middot; Wollega University</h3>
-        <p></p>
-      </div>
-    </div>
-
-    <h3 style="margin:52px 0 18px">Professional profiles</h3>
-    <div class="profile-grid">
-      <a class="profile-link" href="https://orcid.org/0000-0002-0451-7803" target="_blank" rel="noopener">ORCID<span>orcid.org</span></a>
-      <a class="profile-link" href="https://www.researchgate.net/profile/Simir-Atanaw" target="_blank" rel="noopener">ResearchGate<span>researchgate.net</span></a>
-      <a class="profile-link" href="https://github.com/Atanaw" target="_blank" rel="noopener">GitHub<span>github.com</span></a>
-      <a class="profile-link" href="https://www.linkedin.com/in/simir-atanaw" target="_blank" rel="noopener">LinkedIn<span>linkedin.com</span></a>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="research">
-  <div class="wrap">
-    <div class="section-head">
-      <div><p class="eyebrow">Research</p><h2>Research focus</h2></div>
-      <p>Hydroclimatic extremes, climate change impacts, hydrological modelling, flood and drought risk, environmental modelling, catchment hydrology, climate adaptation, AI for hydrology, and remote sensing.</p>
-    </div>
-    <div class="grid grid-3" style="margin-bottom:64px">
-      <div class="card reveal"><div class="icon">&#9662;</div><h3>Hydroclimatic Extremes</h3><p>Analysis of extreme rainfall, streamflow and drought events under a changing climate.</p></div>
-      <div class="card reveal"><div class="icon">&#9729;</div><h3>Climate Change Impacts</h3><p>CMIP6 scenario-based assessment of hydrological response to climate change.</p></div>
-      <div class="card reveal"><div class="icon">&#9762;</div><h3>Hydrological Modelling</h3><p>SWAT+ and HEC-HMS applications for runoff, erosion and sediment yield.</p></div>
-      <div class="card reveal"><div class="icon">&#9748;</div><h3>Flood &amp; Drought Risk</h3><p>Estimation and assessment of flood and drought risk at catchment scale.</p></div>
-      <div class="card reveal"><div class="icon">&#9773;</div><h3>Catchment Hydrology</h3><p>Experimental watershed monitoring and runoff-generating area characterisation.</p></div>
-      <div class="card reveal"><div class="icon">&#128225;</div><h3>Remote Sensing &amp; GIS</h3><p>ArcGIS, QGIS and Google Earth Engine for spatial hydrological analysis.</p></div>
-    </div>
-
-    <h2 style="margin-bottom:24px">Projects</h2>
-    <div class="grid grid-3" style="margin-bottom:64px">
-      <div class="card reveal">
-        <span class="status">In Progress</span>
-        <h3>River Ray Flood Analysis</h3>
-        <p>Integrated flood estimation and flood-inundation modelling for the River Ray catchment, Swindon.</p>
-        <div class="tags"><span class="tag">Flood Estimation</span><span class="tag">HEC-RAS</span><span class="tag">FEH</span><span class="tag">ReFH2</span></div>
-      </div>
-      <div class="card reveal">
-        <span class="status">In Progress</span>
-        <h3>Dirima Watershed</h3>
-        <p>Catchment modelling of runoff-generating areas, erosion, sediment yield and nutrient transport.</p>
-        <div class="tags"><span class="tag">SWAT+</span><span class="tag">Catchment Hydrology</span><span class="tag">Soil Erosion</span></div>
-      </div>
-      <div class="card reveal">
-        <span class="status">In Progress</span>
-        <h3>Climate Impact Assessment</h3>
-        <p>Scenario-based evaluation of hydrological responses to climate change using CMIP6 projections.</p>
-        <div class="tags"><span class="tag">CMIP6</span><span class="tag">Streamflow</span><span class="tag">Drought</span></div>
-      </div>
-    </div>
-
-    <h2 style="margin-bottom:24px">Publications</h2>
-    <div class="grid" style="gap:18px">
-      <div class="card pub-card reveal">
-        <p class="pub-year">2024</p>
-        <p class="pub-title">Assessment of erosion, sediment yield, and runoff generating areas in Dirima catchment, upper Blue Nile, Tana Basin, Ethiopia</p>
-        <p>Atanaw, S. B., Zimale, F. A., &amp; Ayenew, T. &middot; Sustainable Water Resources Management</p>
-        <a class="doi" href="https://doi.org/10.1007/s40899-024-01167-3" target="_blank" rel="noopener">View DOI &rarr;</a>
-      </div>
-      <div class="card pub-card reveal">
-        <p class="pub-year">2023</p>
-        <p class="pub-title">Modeling future hydrological responses through parameter optimization and climate change scenarios in Dirima Watershed, Ethiopia</p>
-        <p>Atanaw, S. B., Zimale, F. A., Ayenew, T., &amp; Ayele, G. T. &middot; Modeling Earth Systems and Environment, 10(1), 1117–1135</p>
-        <a class="doi" href="https://doi.org/10.1007/s40808-023-01817-z" target="_blank" rel="noopener">View DOI &rarr;</a>
-      </div>
-      <div class="card pub-card reveal">
-        <p class="pub-year">2019</p>
-        <p class="pub-title">Effects of soil and water conservation practices on runoff, soil and nutrient losses in Alekt Wenz Watershed, Ethiopian Highland</p>
-        <p>Atanaw, S. B., Aynalem, D. W., Adem, A. A., Mekuria, W., &amp; Tilahun, S. A. &middot; LNICST, 274, 170–182</p>
-        <a class="doi" href="https://doi.org/10.1007/978-3-030-15357-1_14" target="_blank" rel="noopener">View DOI &rarr;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="skills">
-  <div class="wrap">
-    <div class="section-head">
-      <div><p class="eyebrow">Technical Skills</p><h2>Tools &amp; methods</h2></div>
-      <p>Evidence-based skill levels across modelling, climate analysis, programming, GIS, statistics and field hydrology.</p>
-    </div>
-    <div class="grid grid-3" style="margin-bottom:56px">
-      <div class="card reveal"><h3>Hydrological Modelling</h3>
-        <span class="skill-label">Experienced</span> SWAT+<br>
-        <span class="skill-label">Experienced</span> HEC-HMS
-      </div>
-      <div class="card reveal"><h3>Climate Analysis</h3>
-        <span class="skill-label">Experienced</span> CMIP6 projections<br>
-        <span class="skill-label">Experienced</span> Climate impact assessment
-      </div>
-      <div class="card reveal"><h3>Programming</h3>
-        <span class="skill-label">Experienced</span> R<br>
-        <span class="skill-label developing">Working knowledge</span> Python<br>
-        <span class="skill-label developing">Working knowledge</span> SPSS
-      </div>
-      <div class="card reveal"><h3>GIS &amp; Remote Sensing</h3>
-        <span class="skill-label">Experienced</span> ArcGIS<br>
-        <span class="skill-label">Experienced</span> QGIS<br>
-        <span class="skill-label developing">Working knowledge</span> Google Earth Engine
-      </div>
-      <div class="card reveal"><h3>Statistics</h3>
-        <span class="skill-label">Experienced</span> Time-series analysis<br>
-        <span class="skill-label">Experienced</span> Calibration–validation<br>
-        <span class="skill-label developing">Working knowledge</span> Uncertainty analysis
-      </div>
-      <div class="card reveal"><h3>Field Hydrology</h3>
-        <span class="skill-label">Experienced</span> Hydrometry<br>
-        <span class="skill-label">Experienced</span> Environmental monitoring<br>
-        <span class="skill-label">Experienced</span> Experimental watersheds
-      </div>
-    </div>
-    <div class="grid grid-2">
-      <div><h3 style="margin-bottom:14px">Professional memberships</h3>
-        <p>British Hydrological Society<br>International Association of Hydrological Sciences<br>International Water Resources Association</p>
-      </div>
-      <div><h3 style="margin-bottom:14px">Awards &amp; training</h3>
-        <p>Nature-Based Solutions for Climate Resilience (2025)<br>Kiel University Research Stay (2022 &amp; 2024)<br>Project Management in Practice (2025)</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="contact">
-  <div class="wrap">
-    <div class="section-head">
-      <div><p class="eyebrow">Contact</p><h2>Interested working together</h2></div>
-      <p>I welcome conversations about full-time hydrology and water-resources opportunities, research collaboration, flood and drought studies, catchment projects and multidisciplinary environmental research. I came to the UK in 2025 and have full rights to work here with no sponsorship required. I am open to relocation within the UK for the right opportunity.</p>
-    </div>
-    <div class="contact-panel">
-      <div>
-        <h3>Get in touch</h3>
-        <p>Swindon, United Kingdom</p>
-        <p><a href="mailto:simirbirhan80@gmail.com">simirbirhan80@gmail.com</a></p>
-        <p><a href="tel:+447592589461">+44 7592 589461</a></p>
-      </div>
-      <div class="contact-actions">
-        <a class="btn btn-primary" href="mailto:simirbirhan80@gmail.com">Email Me</a>
-        <a class="btn btn-secondary" href="https://www.linkedin.com/in/simir-atanaw" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-secondary" href="https://www.researchgate.net/profile/Simir-Atanaw" target="_blank" rel="noopener">ResearchGate</a>
-        <a class="btn btn-secondary" href="https://orcid.org/0000-0002-0451-7803" target="_blank" rel="noopener">ORCID</a>
-      </div>
+      <div class="photo-tag"></div>
+      <a class="video-link" href="#">&#9654; Short video about me</a>
     </div>
   </div>
 </section>
@@ -290,16 +119,16 @@
     <div>
       <h3>Dr. Simir Atanaw</h3>
       <p>Hydrologist &middot; Swindon, United Kingdom</p>
-      <p><a href="mailto:simirbirhan80@gmail.com" style="color:inherit">simirbirhan80@gmail.com</a> &middot; +44 7592 589461</p>
+      <p><a href="mailto:simirbirhan80@gmail.com" class="footer-email">simirbirhan80@gmail.com</a> &middot; +44 7592 589461</p>
     </div>
     <div>
       <h3>Navigation</h3>
       <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#skills">Technical Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="skills.html">Technical Skills</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
     <div>

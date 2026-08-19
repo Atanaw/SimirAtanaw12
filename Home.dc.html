@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Dr. Simir Atanaw | Hydrologist</title>
+  <meta name="description" content="Professional website of Dr. Simir Atanaw, a hydrologist specialising in hydroclimatic extremes, climate change impacts, hydrological modelling, flood and drought risk assessment, GIS and remote sensing.">
+  <link rel="canonical" href="https://simir.uk/">
+  <meta property="og:title" content="Dr. Simir Atanaw | Hydrologist">
+  <meta property="og:description" content="Professional website of Dr. Simir Atanaw, a hydrologist specialising in hydroclimatic extremes, climate change impacts, hydrological modelling, flood and drought risk assessment, GIS and remote sensing.">
+  <meta property="og:url" content="https://simir.uk/">
+  <meta property="og:type" content="profile">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://simir.uk/">
+  <meta name="twitter:title" content="Dr. Simir Atanaw | Hydrologist">
+  <meta name="twitter:description" content="Professional website of Dr. Simir Atanaw, a hydrologist specialising in hydroclimatic extremes, climate change impacts, hydrological modelling, flood and drought risk assessment, GIS and remote sensing.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Simir Atanaw",
+    "url": "https://simir.uk/",
+    "jobTitle": "Hydrologist",
+    "email": "mailto:simirbirhan80@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Swindon", "addressCountry": "GB" },
+    "sameAs": [
+      "https://orcid.org/0000-0002-0451-7803",
+      "https://www.researchgate.net/profile/Simir-Atanaw",
+      "https://github.com/Atanaw",
+      "https://www.linkedin.com/in/simir-atanaw"
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/styles.css">
+  <script src="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    a { color: var(--color-primary); }
+    a:hover { color: var(--color-primary-hover); }
+    :focus-visible { outline: 2px solid var(--color-focus-ring); outline-offset: 2px; }
+    .skip-link { position: absolute; left: -999px; top: 0; background: var(--color-surface); color: var(--color-text-primary); padding: 12px 20px; z-index: 100; border-radius: 0 0 8px 0; }
+    .skip-link:focus { left: 0; }
+    ::selection { background: var(--color-primary-tint); }
+  </style>
+</helmet>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header role="banner" style="position:sticky;top:0;z-index:50;background:var(--color-primary);box-shadow:0 1px 0 rgba(0,0,0,0.08)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="Home.dc.html" style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#FFFFFF;letter-spacing:0.01em;text-decoration:none">Simir Atanaw</a>
+    <nav aria-label="Primary" style="display:{{ desktopNavDisplay }}">
+      <ul style="display:flex;gap:32px;list-style:none;margin:0;padding:0">
+        <li><a href="Home.dc.html" aria-current="page" style="color:#FFFFFF;text-decoration:none;font-weight:700;font-size:0.95rem;border-bottom:2px solid #FFFFFF;padding-bottom:4px">Home</a></li>
+        <li><a href="About.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">About</a></li>
+        <li><a href="Research.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">Research</a></li>
+        <li><a href="Skills.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">Technical Skills</a></li>
+        <li><a href="Contact.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">Contact</a></li>
+      </ul>
+    </nav>
+    <button aria-label="Toggle menu" aria-expanded="{{ menuOpen }}" onClick="{{ toggleMenu }}" style="display:{{ mobileToggleDisplay }};background:none;border:1px solid rgba(255,255,255,0.4);border-radius:8px;padding:8px 12px;color:#FFFFFF;cursor:pointer">
+      <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Icon" name="menu" size="{{ 20 }}" color="{{ '#FFFFFF' }}" hint-size="20px,20px"></x-import>
+    </button>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <nav aria-label="Mobile" style="padding:8px 32px 20px;display:flex;flex-direction:column;gap:16px">
+      <a href="Home.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:700">Home</a>
+      <a href="About.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">About</a>
+      <a href="Research.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">Research</a>
+      <a href="Skills.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">Technical Skills</a>
+      <a href="Contact.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">Contact</a>
+    </nav>
+  </sc-if>
+</header>
+
+<main id="main">
+<section aria-labelledby="hero-heading" style="background:var(--color-bg)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:40px 32px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;min-height:560px">
+    <div>
+      <span style="display:inline-flex;align-items:center;gap:8px;background:var(--color-primary-tint);color:var(--color-primary);border-radius:999px;padding:8px 16px;font-size:0.8rem;font-weight:600;letter-spacing:0.03em;margin-bottom:16px">
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Icon" name="badge-check" size="{{ 16 }}" hint-size="16px,16px"></x-import>
+        Open to Employment, Research and Project Collaboration
+      </span>
+      <h1 id="hero-heading" style="font-family:var(--font-heading);font-size:var(--text-display-size);line-height:var(--text-display-lh);font-weight:var(--text-display-weight);color:var(--color-text-primary);margin:0 0 8px">Dr. Simir Atanaw</h1>
+      <p style="font-family:var(--font-heading);font-size:1.5rem;font-weight:600;color:var(--color-primary);margin:0 0 16px">Hydrologist</p>
+      <p style="font-size:1.05rem;line-height:1.55;color:var(--color-text-muted);max-width:56ch;margin:0 0 14px">A PhD hydrologist specialising in hydroclimatic extremes, climate change impacts, hydrological modelling, flood and drought risk assessment, and environmental modelling — integrating SWAT+, HEC-HMS, CMIP6 projections, GIS and remote sensing to support catchment-scale climate adaptation.</p>
+      <p style="font-size:0.98rem;line-height:1.5;color:var(--color-text-primary);font-weight:600;max-width:56ch;margin:0 0 24px">Seeking hydrology, flood risk and water resources opportunities, and open to research collaboration.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:16px">
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Button" variant="primary" size="lg" icon="download" hint-size="auto,52px"><a href="uploads/CV.pdf" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Download CV</a></x-import>
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Button" variant="ghost" size="lg" icon="flask-conical" hint-size="auto,52px"><a href="Research.dc.html" style="color:inherit;text-decoration:none">View Research</a></x-import>
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Button" variant="ghost" size="lg" icon="mail" hint-size="auto,52px"><a href="Contact.dc.html" style="color:inherit;text-decoration:none">Contact Me</a></x-import>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
+      <div style="background:var(--color-surface-sunken);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-md)">
+        <image-slot id="portrait" src="https://hydroclimlab.uk/assets/simir.png" style="width:320px;height:390px" shape="rounded" radius="16" placeholder="Drop professional portrait"></image-slot>
+      </div>
+      <a href="#" style="display:inline-flex;align-items:center;gap:8px;color:var(--color-primary);text-decoration:none;font-weight:600;font-size:0.95rem">
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Icon" name="play-circle" size="{{ 18 }}" hint-size="18px,18px"></x-import>
+        Short video about me
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer role="contentinfo" style="background:var(--color-primary);color:#FFFFFF">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px">
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;margin:0 0 8px">Dr. Simir Atanaw</p>
+      <p style="margin:0 0 4px;opacity:0.85">Hydrologist</p>
+      <p style="margin:0 0 4px;opacity:0.85">Swindon, United Kingdom</p>
+      <p style="margin:0 0 4px;opacity:0.85"><a href="mailto:simirbirhan80@gmail.com" style="color:#FFFFFF">simirbirhan80@gmail.com</a></p>
+      <p style="margin:0;opacity:0.85">+44 7592 589461</p>
+    </div>
+    <div>
+      <p style="font-weight:600;margin:0 0 16px;letter-spacing:0.03em;font-size:0.85rem;text-transform:uppercase;opacity:0.85">Navigation</p>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
+        <li><a href="Home.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Home</a></li>
+        <li><a href="About.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">About</a></li>
+        <li><a href="Research.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Research</a></li>
+        <li><a href="Skills.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Technical Skills</a></li>
+        <li><a href="Contact.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-weight:600;margin:0 0 16px;letter-spacing:0.03em;font-size:0.85rem;text-transform:uppercase;opacity:0.85">Profiles</p>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
+        <li><a href="https://orcid.org/0000-0002-0451-7803" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">ORCID</a></li>
+        <li><a href="https://www.researchgate.net/profile/Simir-Atanaw" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">ResearchGate</a></li>
+        <li><a href="https://github.com/Atanaw" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/simir-atanaw" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.15);padding:20px 32px;text-align:center;font-size:0.85rem;opacity:0.75">© {{ year }} Dr. Simir Atanaw. All rights reserved.</div>
+</footer>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { menuOpen: false };
+  toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+  closeMenu = () => this.setState({ menuOpen: false });
+  renderVals() {
+    return {
+      menuOpen: this.state.menuOpen,
+      toggleMenu: this.toggleMenu,
+      closeMenu: this.closeMenu,
+      desktopNavDisplay: 'block',
+      mobileToggleDisplay: 'none',
+      year: new Date().getFullYear()
+    };
+  }
+}
+</script>
+</body>
+</html>

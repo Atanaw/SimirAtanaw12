@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>About | Dr. Simir Atanaw</title>
+  <meta name="description" content="About Dr. Simir Atanaw, a PhD hydrologist &mdash; education, professional experience and academic profiles.">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/styles.css">
+  <script src="_ds/meridian-portfolio-design-system-cc573388-07cf-477a-adb2-0c99ff1940a9/_ds_bundle.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    a { color: var(--color-primary); }
+    a:hover { color: var(--color-primary-hover); }
+    :focus-visible { outline: 2px solid var(--color-focus-ring); outline-offset: 2px; }
+    .skip-link { position: absolute; left: -999px; top: 0; background: var(--color-surface); color: var(--color-text-primary); padding: 12px 20px; z-index: 100; border-radius: 0 0 8px 0; }
+    .skip-link:focus { left: 0; }
+    ::selection { background: var(--color-primary-tint); }
+  </style>
+</helmet>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header role="banner" style="position:sticky;top:0;z-index:50;background:var(--color-primary);box-shadow:0 1px 0 rgba(0,0,0,0.08)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="Home.dc.html" style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#FFFFFF;letter-spacing:0.01em;text-decoration:none">Simir Atanaw</a>
+    <nav aria-label="Primary" style="display:{{ desktopNavDisplay }}">
+      <ul style="display:flex;gap:32px;list-style:none;margin:0;padding:0">
+        <li><a href="Home.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">Home</a></li>
+        <li><a href="About.dc.html" aria-current="page" style="color:#FFFFFF;text-decoration:none;font-weight:700;font-size:0.95rem;border-bottom:2px solid #FFFFFF;padding-bottom:4px">About</a></li>
+        <li><a href="Research.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">Research</a></li>
+        <li><a href="Skills.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">Technical Skills</a></li>
+        <li><a href="Contact.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500;font-size:0.95rem;opacity:0.85">Contact</a></li>
+      </ul>
+    </nav>
+    <button aria-label="Toggle menu" aria-expanded="{{ menuOpen }}" onClick="{{ toggleMenu }}" style="display:{{ mobileToggleDisplay }};background:none;border:1px solid rgba(255,255,255,0.4);border-radius:8px;padding:8px 12px;color:#FFFFFF;cursor:pointer">
+      <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Icon" name="menu" size="{{ 20 }}" color="{{ '#FFFFFF' }}" hint-size="20px,20px"></x-import>
+    </button>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <nav aria-label="Mobile" style="padding:8px 32px 20px;display:flex;flex-direction:column;gap:16px">
+      <a href="Home.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">Home</a>
+      <a href="About.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:700">About</a>
+      <a href="Research.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">Research</a>
+      <a href="Skills.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">Technical Skills</a>
+      <a href="Contact.dc.html" style="color:#FFFFFF;text-decoration:none;font-weight:500">Contact</a>
+    </nav>
+  </sc-if>
+</header>
+
+<main id="main">
+<section aria-labelledby="about-heading" style="background:var(--color-surface)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:72px 32px 96px">
+    <h1 id="about-heading" style="font-family:var(--font-heading);font-size:var(--text-h1-size);font-weight:var(--text-h1-weight);color:var(--color-text-primary);margin:0 0 56px">About</h1>
+
+    <h2 style="font-family:var(--font-heading);font-size:var(--text-h3-size);font-weight:var(--text-h3-weight);color:var(--color-text-primary);margin:0 0 16px">About me</h2>
+    <p style="max-width:var(--content-max);font-size:1.05rem;line-height:1.7;color:var(--color-text-muted);margin:0 0 20px">I am a hydrologist with a PhD in Hydrology and Water Resources Management, specialising in hydroclimatic extremes, climate change impacts, hydrological modelling, flood and drought risk assessment, and environmental modelling. I have experience integrating physically based models (SWAT+, HEC-HMS), CMIP6 climate projections, GIS, remote sensing and field observations to investigate catchment processes and support climate adaptation. I am passionate about interdisciplinary research combining hydrology, climate science and environmental modelling to improve resilience to climate extremes, and I am currently seeking full-time opportunities in hydrology, flood risk and water resources while remaining open to research and project collaboration.</p>
+    <p style="max-width:var(--content-max);font-size:0.98rem;line-height:1.6;color:var(--color-text-faint);margin:0 0 72px">Full right to work in the UK &middot; willing to relocate internationally &middot; available for fieldwork and international collaboration.</p>
+
+    <h2 style="font-family:var(--font-heading);font-size:var(--text-h3-size);font-weight:var(--text-h3-weight);color:var(--color-text-primary);margin:0 0 32px">Professional experience</h2>
+    <ol style="list-style:none;margin:0 0 72px;padding:0;max-width:var(--content-max);border-left:2px solid var(--color-border);display:flex;flex-direction:column;gap:36px">
+      <li style="position:relative;padding-left:28px">
+        <span aria-hidden="true" style="position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--color-primary)"></span>
+        <p style="font-size:0.85rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--color-text-faint);margin:0 0 6px">2025</p>
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;color:var(--color-text-primary);margin:0 0 4px">Assistant Professor &middot; University of Gondar</h3>
+        <p style="font-size:0.95rem;line-height:1.6;color:var(--color-text-muted);margin:0">Conducted research in hydrological modelling, hydroclimate and watershed processes; established and managed an experimental watershed for long-term hydrological monitoring; supervised MSc research; developed collaborative research proposals and publications.</p>
+      </li>
+      <li style="position:relative;padding-left:28px">
+        <span aria-hidden="true" style="position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--color-border-strong)"></span>
+        <p style="font-size:0.85rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--color-text-faint);margin:0 0 6px">2024–2025</p>
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;color:var(--color-text-primary);margin:0 0 4px">Project Manager &mdash; SWAMP</h3>
+        <p style="font-size:0.95rem;line-height:1.6;color:var(--color-text-muted);margin:0">Led multidisciplinary research on sustainable water resources management; coordinated field observations, environmental datasets and hydrological modelling; collaborated with international partners from Germany and Ethiopia; delivered research reports and stakeholder engagement.</p>
+      </li>
+      <li style="position:relative;padding-left:28px">
+        <span aria-hidden="true" style="position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--color-border-strong)"></span>
+        <p style="font-size:0.85rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--color-text-faint);margin:0 0 6px">2017–2025</p>
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;color:var(--color-text-primary);margin:0 0 4px">Lecturer &middot; University of Gondar</h3>
+        <p style="font-size:0.95rem;line-height:1.6;color:var(--color-text-muted);margin:0">Conducted research in hydrology, climate change and catchment management; delivered training in SWAT+, GIS, R and environmental modelling.</p>
+      </li>
+      <li style="position:relative;padding-left:28px">
+        <span aria-hidden="true" style="position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--color-border-strong)"></span>
+        <p style="font-size:0.85rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--color-text-faint);margin:0 0 6px">2019–2025</p>
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;color:var(--color-text-primary);margin:0 0 4px">PhD, Hydrology &amp; Water Resources Management &middot; Africa Centre of Excellence for Water Management, Addis Ababa University</h3>
+        <p style="font-size:0.95rem;line-height:1.6;color:var(--color-text-muted);margin:0">Thesis: Modelling spatial patterns of runoff-generating areas and soil erosion using SWAT+.</p>
+      </li>
+      <li style="position:relative;padding-left:28px">
+        <span aria-hidden="true" style="position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--color-border-strong)"></span>
+        <p style="font-size:0.85rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--color-text-faint);margin:0 0 6px">2015–2017</p>
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;color:var(--color-text-primary);margin:0 0 4px">MSc Engineering Hydrology &middot; Bahir Dar University</h3>
+        <p style="font-size:0.95rem;line-height:1.6;color:var(--color-text-muted);margin:0"></p>
+      </li>
+      <li style="position:relative;padding-left:28px">
+        <span aria-hidden="true" style="position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--color-border-strong)"></span>
+        <p style="font-size:0.85rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--color-text-faint);margin:0 0 6px">2011–2014</p>
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:600;color:var(--color-text-primary);margin:0 0 4px">BSc Water Resources &amp; Irrigation Management &middot; Wollega University</h3>
+        <p style="font-size:0.95rem;line-height:1.6;color:var(--color-text-muted);margin:0"></p>
+      </li>
+    </ol>
+
+    <h2 style="font-family:var(--font-heading);font-size:var(--text-h3-size);font-weight:var(--text-h3-weight);color:var(--color-text-primary);margin:0 0 24px">Professional profiles</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:16px">
+      <a href="https://orcid.org/0000-0002-0451-7803" target="_blank" rel="noopener" aria-label="ORCID profile" style="display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border:1px solid var(--color-border);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-text-primary);font-weight:500">
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Icon" name="badge-check" size="{{ 18 }}" hint-size="18px,18px"></x-import>ORCID</a>
+      <a href="https://www.researchgate.net/profile/Simir-Atanaw" target="_blank" rel="noopener" aria-label="ResearchGate profile" style="display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border:1px solid var(--color-border);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-text-primary);font-weight:500">
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Icon" name="graduation-cap" size="{{ 18 }}" hint-size="18px,18px"></x-import>ResearchGate</a>
+      <a href="https://github.com/Atanaw" target="_blank" rel="noopener" aria-label="GitHub profile" style="display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border:1px solid var(--color-border);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-text-primary);font-weight:500">
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Icon" name="link" size="{{ 18 }}" hint-size="18px,18px"></x-import>GitHub</a>
+      <a href="https://www.linkedin.com/in/simir-atanaw" target="_blank" rel="noopener" aria-label="LinkedIn profile" style="display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border:1px solid var(--color-border);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-text-primary);font-weight:500">
+        <x-import component-from-global-scope="MeridianPortfolioDesignSystem_cc5733.Icon" name="external-link" size="{{ 18 }}" hint-size="18px,18px"></x-import>LinkedIn</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer role="contentinfo" style="background:var(--color-primary);color:#FFFFFF">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px">
+    <div>
+      <p style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;margin:0 0 8px">Dr. Simir Atanaw</p>
+      <p style="margin:0 0 4px;opacity:0.85">Hydrologist</p>
+      <p style="margin:0 0 4px;opacity:0.85">Swindon, United Kingdom</p>
+      <p style="margin:0 0 4px;opacity:0.85"><a href="mailto:simirbirhan80@gmail.com" style="color:#FFFFFF">simirbirhan80@gmail.com</a></p>
+      <p style="margin:0;opacity:0.85">+44 7592 589461</p>
+    </div>
+    <div>
+      <p style="font-weight:600;margin:0 0 16px;letter-spacing:0.03em;font-size:0.85rem;text-transform:uppercase;opacity:0.85">Navigation</p>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
+        <li><a href="Home.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Home</a></li>
+        <li><a href="About.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">About</a></li>
+        <li><a href="Research.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Research</a></li>
+        <li><a href="Skills.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Technical Skills</a></li>
+        <li><a href="Contact.dc.html" style="color:#FFFFFF;text-decoration:none;opacity:0.9">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-weight:600;margin:0 0 16px;letter-spacing:0.03em;font-size:0.85rem;text-transform:uppercase;opacity:0.85">Profiles</p>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
+        <li><a href="https://orcid.org/0000-0002-0451-7803" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">ORCID</a></li>
+        <li><a href="https://www.researchgate.net/profile/Simir-Atanaw" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">ResearchGate</a></li>
+        <li><a href="https://github.com/Atanaw" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/simir-atanaw" target="_blank" rel="noopener" style="color:#FFFFFF;text-decoration:none;opacity:0.9">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.15);padding:20px 32px;text-align:center;font-size:0.85rem;opacity:0.75">&copy; {{ year }} Dr. Simir Atanaw. All rights reserved.</div>
+</footer>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { menuOpen: false };
+  toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+  closeMenu = () => this.setState({ menuOpen: false });
+  renderVals() {
+    return {
+      menuOpen: this.state.menuOpen,
+      toggleMenu: this.toggleMenu,
+      closeMenu: this.closeMenu,
+      desktopNavDisplay: 'block',
+      mobileToggleDisplay: 'none',
+      year: new Date().getFullYear()
+    };
+  }
+}
+</script>
+</body>
+</html>
