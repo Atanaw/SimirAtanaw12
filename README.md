@@ -9,7 +9,6 @@ Static, framework-free personal research website prepared for GitHub and Cloudfl
 - `script.js` — mobile navigation, scroll progress, active navigation and reveal effects
 - `assets/simir.png` — original portrait
 - `assets/simir.webp` — optimized portrait used when supported
-- `assets/hydrology-pattern.svg` — lightweight scientific hero background
 - `documents/` — CV(s)
 - `robots.txt`, `sitemap.xml`, `manifest.webmanifest` — SEO/PWA support
 - `_redirects`, `_headers` — Cloudflare Pages routing and security/cache headers

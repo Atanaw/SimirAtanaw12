@@ -14,5 +14,5 @@ date: 2026-08-19T20:43:00Z
 | Project file | Repo files |
 |---|---|
 | index.html | index.html, style.css, script.js |
-| assets/* | assets/simir.png, assets/simir.webp, assets/hydrology-pattern.svg |
+| assets/* | assets/simir.png, assets/simir.webp |
 | favicons, og-image.jpg | favicon.ico, favicon-48x48.png, favicon-192x192.png, favicon-512x512.png, og-image.jpg |
